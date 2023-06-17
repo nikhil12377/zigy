@@ -23,7 +23,6 @@ function updateDisplay(data) {
 // Simulating a real-time updates
 // fetch will get executed after every 2 seconds
 setInterval(function () {
-  // Fetch data from the server
   fetch("http://localhost:3000/data")
     .then((response) => response.json())
     .then((data) => {
